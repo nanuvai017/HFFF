@@ -6,6 +6,38 @@ body {
     color: #333;
 }
 
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000; /* Black background */
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    font-size: 2em;
+    cursor: pointer;
+    color: #ff4081; /* Colorful Hamburger icon */
+}
+
+/* Website Name */
+.header-name {
+    flex: 2;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white; /* White color for website name */
+}
+
+/* Love Emoji */
+.header-love {
+    font-size: 2em;
+    color: red; /* Red color for love emoji */
+}
+
 /* Navbar Styles */
 .navbar {
     display: flex;
@@ -14,13 +46,6 @@ body {
     background-color: #ffffff; /* White Background */
     padding: 10px 20px;
     border-bottom: 2px solid #007b5e; /* Green Border */
-}
-
-/* Logo Section */
-.logo img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
 }
 
 /* Navigation Menu */
@@ -46,38 +71,6 @@ body {
 .menu a:hover {
     color: #007b5e; /* Green color */
     font-weight: bold; /* Bold text on hover */
-}
-
-/* Header Section */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin-top: 10px;
-}
-
-.header-left {
-    flex: 1;
-}
-
-.header-center {
-    flex: 2;
-    text-align: center;
-}
-
-.header-right {
-    flex: 1;
-    text-align: right;
-    font-size: 2em;
-}
-
-/* Website Name */
-.header-center h1 {
-    margin: 0;
-    font-size: 2em;
-    font-weight: bold;
-    color: #007b5e; /* Green color for the website name */
 }
 
 /* Smooth scrolling */
@@ -112,4 +105,4 @@ html {
     .menu.show {
         display: flex;
     }
-}
+        }
