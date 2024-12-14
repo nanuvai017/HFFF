@@ -3,59 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimal Website</title>
+    <title>Interactive Navbar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Navigation Bar -->
     <header>
         <nav class="navbar">
             <div class="logo">My Website</div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
             <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" onclick="showIcon('home-icon')">Home</a></li>
+                <li><a href="#news" onclick="showIcon('news-icon')">News</a></li>
+                <li><a href="#about" onclick="showIcon('about-icon')">About</a></li>
+                <li><a href="#donation" onclick="showIcon('donation-icon')">Donation</a></li>
+                <li><a href="#contact" onclick="showIcon('contact-icon')">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h1>Welcome to My Minimal Website</h1>
-        <p>Clean. Simple. Effective.</p>
-        <a href="#about" class="btn">Learn More</a>
-    </section>
+    <!-- Circular Icons -->
+    <div id="home-icon" class="circle-icon">🏠</div>
+    <div id="news-icon" class="circle-icon">📰</div>
+    <div id="about-icon" class="circle-icon">ℹ️</div>
+    <div id="donation-icon" class="circle-icon">💰</div>
+    <div id="contact-icon" class="circle-icon">📞</div>
 
-    <!-- About Section -->
+    <!-- Sections -->
+    <section id="home">
+        <h1>Home</h1>
+    </section>
+    <section id="news">
+        <h1>News</h1>
+    </section>
     <section id="about">
-        <h2>About Us</h2>
-        <p>This is a lightweight and clean design with minimal styles.</p>
+        <h1>About Us</h1>
     </section>
-
-    <!-- Circular Images Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="circle-container">
-            <div class="circle">
-                <img src="https://via.placeholder.com/150" alt="Service 1">
-                <p>Service 1</p>
-            </div>
-            <div class="circle">
-                <img src="https://via.placeholder.com/150" alt="Service 2">
-                <p>Service 2</p>
-            </div>
-            <div class="circle">
-                <img src="https://via.placeholder.com/150" alt="Service 3">
-                <p>Service 3</p>
-            </div>
-        </div>
+    <section id="donation">
+        <h1>Donation</h1>
+    </section>
+    <section id="contact">
+        <h1>Contact</h1>
     </section>
 
     <!-- Footer -->
     <footer>
         <p>© 2024 My Website. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function showIcon(iconId) {
+            // Hide all icons
+            document.querySelectorAll('.circle-icon').forEach(icon => {
+                icon.style.display = 'none';
+            });
+
+            // Show the selected icon
+            const selectedIcon = document.getElementById(iconId);
+            selectedIcon.style.display = 'block';
+
+            // Smooth animation
+            selectedIcon.classList.add('show');
+            setTimeout(() => selectedIcon.classList.remove('show'), 1000);
+        }
+
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
-          </html>
-          
+    </html>
+    
