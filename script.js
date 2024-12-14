@@ -1,5 +1,4 @@
-// Function to toggle menu visibility on small screens
 function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    menu.classList.toggle('show');
+    const menu = document.querySelector('.menu-popup');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
 }
