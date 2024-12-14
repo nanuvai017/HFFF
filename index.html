@@ -4,43 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hilful Fuzul Foundation</title>
-    <link rel="stylesheet" href="styles.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- Header Section -->
     <header class="header">
-        <!-- Hamburger Menu for Mobile -->
         <div class="hamburger" onclick="toggleMenu()">☰</div>
-        
-        <!-- Website Name -->
         <div class="header-name">Hilful Fuzul Foundation</div>
-        
-        <!-- Love Emoji -->
         <div class="header-love">❤️</div>
+        <div class="language-toggle">
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('bn')">বাংলা</button>
+        </div>
     </header>
 
-    <!-- Navigation Menu -->
-    <nav class="navbar">
-        <ul class="menu">
+    <!-- Main Content Section -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2 id="home-title">Welcome to Hilful Fuzul Foundation</h2>
+            <p id="home-description">Your trusted platform for donations and services.</p>
+            <p id="home-intro">We are dedicated to making a difference in the world by providing free services and humanitarian aid. Our mission is to bring smiles to those in need through education, healthcare, and disaster relief.</p>
+        </section>
+
+        <!-- News Section -->
+        <section id="news">
+            <h2 id="news-title">Latest News</h2>
+            <div class="news-posts">
+                <div class="news-post">
+                    <img src="education-donation.jpg" alt="Education Donation" class="news-image">
+                    <h3>Donation Drive for Education</h3>
+                    <p>We are launching a donation drive to help fund education for underprivileged children.</p>
+                </div>
+                <div class="news-post">
+                    <img src="homeless-aid.jpg" alt="Helping the Homeless" class="news-image">
+                    <h3>Helping the Homeless</h3>
+                    <p>Our volunteers are working to provide food and shelter for the homeless.</p>
+                </div>
+                <div class="news-post">
+                    <img src="medical-aid.jpg" alt="Medical Aid Campaign" class="news-image">
+                    <h3>Medical Aid Campaign</h3>
+                    <p>We are running a campaign to provide medical aid to the elderly in remote areas.</p>
+                </div>
+                <div class="news-post">
+                    <img src="child-education.jpg" alt="Child Education Fund" class="news-image">
+                    <h3>Child Education Fund</h3>
+                    <p>Our foundation is focusing on educating underprivileged children in rural areas.</p>
+                </div>
+                <div class="news-post">
+                    <img src="flood-relief.jpg" alt="Helping Flood Victims" class="news-image">
+                    <h3>Helping Flood Victims</h3>
+                    <p>We are providing relief to families affected by the recent floods in the region.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2 id="about-title">About Us</h2>
+            <p id="about-description">The Hilful Fuzul Foundation is a nonprofit organization dedicated to improving lives and supporting communities through various humanitarian initiatives.</p>
+        </section>
+
+        <!-- Donation Section -->
+        <section id="donation">
+            <h2 id="donation-title">Donate to a Cause</h2>
+            <p id="donation-description">Your donation can make a significant impact in someone's life. Choose one of the causes below to donate:</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 id="contact-title">Contact Us</h2>
+            <p>If you have any questions or want to get in touch with us, please feel free to reach out.</p>
+            <p>Email: <a href="mailto:hfff420@gmail.com">hfff420@gmail.com</a></p>
+            <p>Follow us on our social media pages for updates!</p>
+            <p>
+                <a href="https://www.facebook.com/mehadiX420" target="_blank">Facebook</a> | 
+                <a href="https://t.me/mehadi_X_420_ZONE" target="_blank">Telegram</a>
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Hilful Fuzul Foundation. All rights reserved.</p>
+    </footer>
+
+    <!-- Menu Popup for Mobile -->
+    <div class="menu-popup">
+        <div class="logo-circle">
+            <img src="your-logo.png" alt="Website Logo" class="logo">
+        </div>
+        <ul class="popup-menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#news">News</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#donation">Donation</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+    </div>
 
-    <!-- Main Content Section -->
-    <main>
-        <h2>Welcome to Hilful Fuzul Foundation</h2>
-        <p>Your trusted platform for donations and services.</p>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>© 2024 Hilful Fuzul Foundation. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script> <!-- External JS link -->
+    <script src="script.js"></script>
 </body>
-</html>
+    </html>
+        
