@@ -3,76 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Navbar</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Hilful Fuzul Foundation</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS link -->
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Header Section -->
     <header>
-        <nav class="navbar">
-            <div class="logo">My Website</div>
+        <div class="header-left">
+            <!-- Hamburger Menu for Mobile -->
             <div class="hamburger" onclick="toggleMenu()">☰</div>
-            <ul class="menu">
-                <li><a href="#home" onclick="showIcon('home-icon')">Home</a></li>
-                <li><a href="#news" onclick="showIcon('news-icon')">News</a></li>
-                <li><a href="#about" onclick="showIcon('about-icon')">About</a></li>
-                <li><a href="#donation" onclick="showIcon('donation-icon')">Donation</a></li>
-                <li><a href="#contact" onclick="showIcon('contact-icon')">Contact</a></li>
-            </ul>
-        </nav>
+        </div>
+        <div class="header-center">
+            <!-- Website Name -->
+            <h1>Hilful Fuzul Foundation</h1>
+            <!-- Circular Logo -->
+            <img src="your-logo.png" alt="Website Logo" class="logo">
+        </div>
+        <div class="header-right">
+            <!-- Love Emoji -->
+            ❤️
+        </div>
     </header>
 
-    <!-- Circular Icons -->
-    <div id="home-icon" class="circle-icon">🏠</div>
-    <div id="news-icon" class="circle-icon">📰</div>
-    <div id="about-icon" class="circle-icon">ℹ️</div>
-    <div id="donation-icon" class="circle-icon">💰</div>
-    <div id="contact-icon" class="circle-icon">📞</div>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#donation">Donation</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- Sections -->
-    <section id="home">
-        <h1>Home</h1>
-    </section>
-    <section id="news">
-        <h1>News</h1>
-    </section>
-    <section id="about">
-        <h1>About Us</h1>
-    </section>
-    <section id="donation">
-        <h1>Donation</h1>
-    </section>
-    <section id="contact">
-        <h1>Contact</h1>
-    </section>
+    <!-- Main Content Section -->
+    <main>
+        <h2>Welcome to Hilful Fuzul Foundation</h2>
+        <p>Your trusted platform for donations and services.</p>
+    </main>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
-        <p>© 2024 My Website. All rights reserved.</p>
+        <p>© 2024 Hilful Fuzul Foundation. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript -->
-    <script>
-        function showIcon(iconId) {
-            // Hide all icons
-            document.querySelectorAll('.circle-icon').forEach(icon => {
-                icon.style.display = 'none';
-            });
-
-            // Show the selected icon
-            const selectedIcon = document.getElementById(iconId);
-            selectedIcon.style.display = 'block';
-
-            // Smooth animation
-            selectedIcon.classList.add('show');
-            setTimeout(() => selectedIcon.classList.remove('show'), 1000);
-        }
-
-        function toggleMenu() {
-            const menu = document.querySelector('.menu');
-            menu.classList.toggle('active');
-        }
-    </script>
+    <script src="script.js"></script> <!-- External JS link -->
 </body>
-    </html>
-    
+</html>
