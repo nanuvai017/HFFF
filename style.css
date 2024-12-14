@@ -1,108 +1,147 @@
-/* General styles */
+/* General Styles */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #ffffff; /* White Background */
-    color: #333;
-}
-
-/* Header Section */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000000; /* Black background */
-    padding: 10px 20px;
-    color: white;
-}
-
-/* Hamburger Menu */
-.hamburger {
-    font-size: 2em;
-    cursor: pointer;
-    color: #ff4081; /* Colorful Hamburger icon */
-}
-
-/* Website Name */
-.header-name {
-    flex: 2;
-    text-align: center;
-    font-size: 1.8em;
-    font-weight: bold;
-    color: white; /* White color for website name */
-}
-
-/* Love Emoji */
-.header-love {
-    font-size: 2em;
-    color: red; /* Red color for love emoji */
-}
-
-/* Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff; /* White Background */
-    padding: 10px 20px;
-    border-bottom: 2px solid #007b5e; /* Green Border */
-}
-
-/* Navigation Menu */
-.menu {
-    list-style: none;
-    display: flex;
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
-.menu li {
-    margin-left: 30px;
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.menu a {
-    text-decoration: none;
+.header-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.language-toggle button {
+    margin-left: 10px;
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
     color: #333;
-    font-size: 1.1em;
-    transition: color 0.3s, font-weight 0.3s; /* Smooth transition for hover */
 }
 
-/* Hover Effect */
-.menu a:hover {
-    color: #007b5e; /* Green color */
-    font-weight: bold; /* Bold text on hover */
+p {
+    color: #555;
 }
 
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
+/* News Posts */
+.news-posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
+.news-post {
+    width: 45%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Mobile Menu Popup */
+.menu-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+.menu-popup .logo-circle {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.menu-popup .logo {
+    width: 50px;
+    height: 50px;
+}
+
+.popup-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.popup-menu li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.popup-menu li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.popup-menu li a:hover {
+    color: #28a745;
+}
+
+/* Display hamburger on small screens */
+@media screen and (max-width: 768px) {
     .hamburger {
         display: block;
-        font-size: 2em;
-        cursor: pointer;
     }
+}
 
-    .menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #ffffff;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        padding: 20px;
-        border-top: 2px solid #007b5e;
-    }
+/* Buttons */
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
 
-    .menu li {
-        margin: 15px 0;
+button:hover {
+    background-color: #218838;
     }
-
-    .menu.show {
-        display: flex;
-    }
-        }
+        
