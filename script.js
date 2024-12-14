@@ -1,42 +1,18 @@
-// Function to change language
-function changeLanguage(lang) {
-    const elements = {
-        'home-title': {
-            'en': 'Welcome to Hilful Fuzul Foundation',
-            'bn': 'হিলফুল ফুজুল ফাউন্ডেশন এ স্বাগতম'
-        },
-        'home-description': {
-            'en': 'Your trusted platform for donations and services.',
-            'bn': 'আপনার বিশ্বস্ত প্ল্যাটফর্ম দান এবং সেবার জন্য।'
-        },
-        'home-intro': {
-            'en': 'We are dedicated to making a difference in the world by providing free services and humanitarian aid.',
-            'bn': 'আমরা সমাজে মানুষদের সাহায্য করার জন্য নিবেদিত।'
-        },
-        'news-title': {
-            'en': 'Donations and Aid News',
-            'bn': 'দান এবং সাহায্যের নিউজ'
-        },
-        'about-title': {
-            'en': 'About Us',
-            'bn': 'আমাদের সম্পর্কে'
-        },
-        'donation-title': {
-            'en': 'Donate to a Cause',
-            'bn': 'দান করুন একটি উদ্দেশ্যে'
-        },
-        'contact-title': {
-            'en': 'Contact Us',
-            'bn': 'যোগাযোগ করুন'
-        },
-        'donation-description': {
-            'en': 'Your donation can make a significant impact in someone\'s life. Choose one of the causes below to donate:',
-            'bn': 'আপনার দান একজনের জীবন পরিবর্তন করতে সাহায্য করবে। নিচের যে কোনো উদ্দেশ্য নির্বাচন করুন:'
-        }
-    };
+// Show the clicked section
+function showSection(sectionId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        section.classList.remove('active');
+    });
 
-    // Update content based on selected language
-    for (const [key, value] of Object.entries(elements)) {
-        document.getElementById(key).innerText = value[lang];
-    }
+    // Show the selected section
+    const selectedSection = document.getElementById(sectionId);
+    selectedSection.classList.add('active');
+}
+
+// Function to toggle language (You can add your own implementation)
+function toggleLanguage() {
+    alert("Language toggle functionality to be added.");
+    // You can add logic here to change the language (for example, switch to Bengali)
 }
