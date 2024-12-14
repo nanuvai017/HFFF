@@ -1,10 +1,4 @@
-// Toggle menu popup
-function toggleMenu() {
-    const menu = document.querySelector('.menu-popup');
-    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
-}
-
-// Change Language
+// Function to change language
 function changeLanguage(lang) {
     const elements = {
         'home-title': {
@@ -16,28 +10,28 @@ function changeLanguage(lang) {
             'bn': 'আপনার বিশ্বস্ত প্ল্যাটফর্ম দান এবং সেবার জন্য।'
         },
         'home-intro': {
-            'en': 'We are dedicated to making a difference in the world by providing free services and humanitarian aid. Our mission is to bring smiles to those in need through education, healthcare, and disaster relief.',
-            'bn': 'আমরা বিশ্বের মধ্যে পার্থক্য তৈরিতে নিবেদিত, বিনামূল্যে সেবা এবং মানবিক সাহায্য প্রদান করে। আমাদের লক্ষ্য শিক্ষা, স্বাস্থ্যসেবা, এবং দুর্যোগ ত্রাণের মাধ্যমে মানুষের মুখে হাসি আনা।'
+            'en': 'We are dedicated to making a difference in the world by providing free services and humanitarian aid.',
+            'bn': 'আমরা সমাজে মানুষদের সাহায্য করার জন্য নিবেদিত।'
         },
         'news-title': {
-            'en': 'Latest News',
-            'bn': 'সর্বশেষ খবর'
+            'en': 'Donations and Aid News',
+            'bn': 'দান এবং সাহায্যের নিউজ'
         },
         'about-title': {
             'en': 'About Us',
             'bn': 'আমাদের সম্পর্কে'
         },
-        'about-description': {
-            'en': 'The Hilful Fuzul Foundation is a nonprofit organization dedicated to improving lives and supporting communities through various humanitarian initiatives.',
-            'bn': 'হিলফুল ফুজুল ফাউন্ডেশন একটি অলাভজনক প্রতিষ্ঠান যা জীবনের উন্নতি এবং বিভিন্ন মানবিক উদ্যোগের মাধ্যমে সম্প্রদায়গুলিকে সমর্থন করে।'
-        },
         'donation-title': {
             'en': 'Donate to a Cause',
-            'bn': 'একটি কারণের জন্য দান করুন'
+            'bn': 'দান করুন একটি উদ্দেশ্যে'
         },
         'contact-title': {
             'en': 'Contact Us',
-            'bn': 'আমাদের সাথে যোগাযোগ করুন'
+            'bn': 'যোগাযোগ করুন'
+        },
+        'donation-description': {
+            'en': 'Your donation can make a significant impact in someone\'s life. Choose one of the causes below to donate:',
+            'bn': 'আপনার দান একজনের জীবন পরিবর্তন করতে সাহায্য করবে। নিচের যে কোনো উদ্দেশ্য নির্বাচন করুন:'
         }
     };
 
@@ -45,5 +39,4 @@ function changeLanguage(lang) {
     for (const [key, value] of Object.entries(elements)) {
         document.getElementById(key).innerText = value[lang];
     }
-        }
-            
+}
