@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,105 +8,83 @@
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header class="header">
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
-        <div class="header-name">Hilful Fuzul Foundation</div>
-        <div class="header-love">❤️</div>
-        <div class="language-toggle">
-            <button onclick="changeLanguage('en')">English</button>
-            <button onclick="changeLanguage('bn')">বাংলা</button>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="your-logo.png" alt="Website Logo" class="navbar-logo">
+            <span class="brand-name">Hilful Fuzul Foundation ❤️</span>
         </div>
-    </header>
-
-    <!-- Main Content Section -->
-    <main>
-
-        <!-- Home Section -->
-        <section id="home">
-            <h2 id="home-title">Welcome to Hilful Fuzul Foundation</h2>
-            <p id="home-description">Your trusted platform for donations and services.</p>
-            <p id="home-intro">We are dedicated to making a difference in the world by providing free services and humanitarian aid. Our mission is to bring smiles to those in need through education, healthcare, and disaster relief.</p>
-        </section>
-
-        <!-- News Section -->
-        <section id="news">
-            <h2 id="news-title">Latest News</h2>
-            <div class="news-posts">
-                <div class="news-post">
-                    <img src="education-donation.jpg" alt="Education Donation" class="news-image">
-                    <h3>Donation Drive for Education</h3>
-                    <p>We are launching a donation drive to help fund education for underprivileged children.</p>
-                </div>
-                <div class="news-post">
-                    <img src="homeless-aid.jpg" alt="Helping the Homeless" class="news-image">
-                    <h3>Helping the Homeless</h3>
-                    <p>Our volunteers are working to provide food and shelter for the homeless.</p>
-                </div>
-                <div class="news-post">
-                    <img src="medical-aid.jpg" alt="Medical Aid Campaign" class="news-image">
-                    <h3>Medical Aid Campaign</h3>
-                    <p>We are running a campaign to provide medical aid to the elderly in remote areas.</p>
-                </div>
-                <div class="news-post">
-                    <img src="child-education.jpg" alt="Child Education Fund" class="news-image">
-                    <h3>Child Education Fund</h3>
-                    <p>Our foundation is focusing on educating underprivileged children in rural areas.</p>
-                </div>
-                <div class="news-post">
-                    <img src="flood-relief.jpg" alt="Helping Flood Victims" class="news-image">
-                    <h3>Helping Flood Victims</h3>
-                    <p>We are providing relief to families affected by the recent floods in the region.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about">
-            <h2 id="about-title">About Us</h2>
-            <p id="about-description">The Hilful Fuzul Foundation is a nonprofit organization dedicated to improving lives and supporting communities through various humanitarian initiatives.</p>
-        </section>
-
-        <!-- Donation Section -->
-        <section id="donation">
-            <h2 id="donation-title">Donate to a Cause</h2>
-            <p id="donation-description">Your donation can make a significant impact in someone's life. Choose one of the causes below to donate:</p>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2 id="contact-title">Contact Us</h2>
-            <p>If you have any questions or want to get in touch with us, please feel free to reach out.</p>
-            <p>Email: <a href="mailto:hfff420@gmail.com">hfff420@gmail.com</a></p>
-            <p>Follow us on our social media pages for updates!</p>
-            <p>
-                <a href="https://www.facebook.com/mehadiX420" target="_blank">Facebook</a> | 
-                <a href="https://t.me/mehadi_X_420_ZONE" target="_blank">Telegram</a>
-            </p>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 Hilful Fuzul Foundation. All rights reserved.</p>
-    </footer>
-
-    <!-- Menu Popup for Mobile -->
-    <div class="menu-popup">
-        <div class="logo-circle">
-            <img src="your-logo.png" alt="Website Logo" class="logo">
-        </div>
-        <ul class="popup-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#donation">Donation</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <ul class="navbar-links">
+            <li><a href="#home" id="home-link">Home</a></li>
+            <li><a href="#news" id="news-link">News</a></li>
+            <li><a href="#about" id="about-link">About</a></li>
+            <li><a href="#donation" id="donation-link">Donation</a></li>
+            <li><a href="#contact" id="contact-link">Contact</a></li>
         </ul>
-    </div>
+        <div class="language-toggle">
+            <button onclick="changeLanguage('bn')">বাংলা</button>
+            <button onclick="changeLanguage('en')">English</button>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2 id="home-title">হিলফুল ফুজুল ফাউন্ডেশন এ স্বাগতম</h2>
+        <p id="home-description">আপনার বিশ্বস্ত প্ল্যাটফর্ম দান এবং সেবার জন্য।</p>
+        <p id="home-intro">আমরা সমাজে মানুষদের সাহায্য করার জন্য নিবেদিত। আমরা শিক্ষা, স্বাস্থ্যসেবা এবং দুর্যোগ সাহায্য নিয়ে কাজ করি।</p>
+    </section>
+
+    <!-- News Section -->
+    <section id="news">
+        <h2 id="news-title">দান এবং সাহায্যের নিউজ</h2>
+        <div class="news-posts">
+            <div class="news-post">
+                <img src="donation1.jpg" alt="Education Donation" class="news-image">
+                <h3>শিক্ষার জন্য দান সংগ্রহ</h3>
+                <p>আমরা সুবিধাবঞ্চিত শিশুদের জন্য শিক্ষার দান সংগ্রহ করছি।</p>
+                <video controls>
+                    <source src="education-drive.mp4" type="video/mp4">
+                    আপনার ব্রাউজার ভিডিও ট্যাগ সমর্থন করে না।
+                </video>
+            </div>
+            <!-- Add more news posts as needed -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 id="about-title">আমাদের সম্পর্কে</h2>
+        <p id="about-description">হিলফুল ফুজুল ফাউন্ডেশন একটি অলাভজনক সংস্থা যা মানুষের জীবন উন্নত করার জন্য বিভিন্ন ধরনের সাহায্য প্রদান করে।</p>
+        <p id="about-core">আমাদের মূল লক্ষ্য হচ্ছে শিক্ষা, স্বাস্থ্যসেবা, এবং দুর্যোগ সহায়তায় কাজ করা।</p>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donation">
+        <h2 id="donation-title">দান করুন একটি উদ্দেশ্যে</h2>
+        <p id="donation-description">আপনার দান একজনের জীবন পরিবর্তন করতে সাহায্য করবে। নিচের যে কোনো উদ্দেশ্য নির্বাচন করুন:</p>
+        <div class="donation-options">
+            <div class="donation-option">
+                <h3>শিক্ষার জন্য দান</h3>
+                <p>আপনার দান সুবিধাবঞ্চিত শিশুদের শিক্ষা সহায়তা প্রদান করবে।</p>
+                <a href="#donate" class="donate-button">দান করুন</a>
+            </div>
+            <!-- Add more donation options as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 id="contact-title">যোগাযোগ করুন</h2>
+        <p id="contact-description">যেকোনো প্রশ্ন বা তথ্যের জন্য আমাদের সাথে যোগাযোগ করুন:</p>
+        <p>Email: <a href="mailto:hilfulfuzulfoundation@gmail.com">hilfulfuzulfoundation@gmail.com</a></p>
+        <p>Follow us on social media:</p>
+        <p>
+            <a href="https://t.me/mehadi_X_420_ZONE" target="_blank">Telegram</a> | 
+            <a href="https://www.facebook.com/mehadiX420" target="_blank">Facebook</a>
+        </p>
+    </section>
 
     <script src="script.js"></script>
 </body>
-    </html>
-        
+                                             </html>
+    
